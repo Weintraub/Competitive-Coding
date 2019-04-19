@@ -1,0 +1,2 @@
+myLetters = list(input())
+print(myLetters)

@@ -1,0 +1,18 @@
+myGames, myAlice, myBob, myAliceWins, myBobWins = int(input()), input().split(), input().split(), 0 ,0
+
+for i in range(myGames):
+    if myAlice[i] == myBob[i]:continue
+    
+    if myAlice[i] == 'rock' and myBob[i] == 'scissors':
+        myBobWins += 1
+   
+    elif myAlice[i] == 'paper' and myBob[i] == 'rock':
+        myBobWins += 1
+    
+    elif myAlice[i] == 'scissors' and myBob[i] == 'paper':
+        myBobWins += 1
+        
+    else:
+        myAliceWins += 1
+        
+print(myBobWins, myAliceWins)

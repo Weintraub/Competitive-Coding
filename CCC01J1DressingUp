@@ -1,0 +1,6 @@
+myLength = int(input())
+mySpace = myLength - 1
+for i in range(myLength):
+    print('*' *(myLength - mySpace) + ' '*mySpace*2 + '*' *(myLength - mySpace))
+    mySpace -= 2
+    
